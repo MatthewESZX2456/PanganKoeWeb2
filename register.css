@@ -12,9 +12,13 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
   
   background-image: linear-gradient(to right, rgba(39, 126, 61, 0.933), #72eb7e);
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -52,4 +56,134 @@ header .a1, .a2, .a3 {
 
 header .a1:hover, .a2:hover, .a3:hover {
   transform: translateY(-4px);
+}
+
+footer {
+  padding: 30px;
+  background-color: rgb(65, 159, 39);
+  margin-top: 200px;
+  box-shadow: 2px 2px 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .text-footer-1 {
+  font-family: system-ui;
+  font-weight: 700;
+  color: white;
+  margin-left: 650px;
+}
+
+footer .text-footer-2 {
+  font-family: system-ui;
+  font-weight: 700;
+  color: yellow;
+}
+
+footer .text-footer-3 {
+  font-family: system-ui;
+  margin-left: 10px;
+  font-size: 12px;
+  color: white;
+  margin-top: 4px;
+}
+
+.for-image-1 {
+  display: flex;
+  margin-top: 100px;
+  position: absolute;
+
+  left: 850px;
+}
+
+.form-container {
+  padding: 30px 50px;
+  display: grid;
+  margin-top: 100px;
+  margin-left: 100px;
+
+  background-color: rgb(65, 159, 39);
+  max-width: 500px;
+  width: 100%;
+
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
+
+.form-title {
+  font-family: system-ui;
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.pangankoe-form {
+  padding: 20px;
+}
+
+label {
+  font-family: system-ui;
+  color: white;
+}
+
+.normal-input {
+  width: 350px;
+  height: 25px;
+  margin-top: 5px;
+
+  border-radius: 5px;
+  border: none;
+
+  font-family: system-ui;
+}
+
+.password-group {
+  display: flex;
+  gap: 24px;
+}
+
+.password-input {
+  margin-top: 5px;
+  height: 25px;
+
+  border-radius: 5px;
+  border: none;
+
+  position:sticky;
+}
+
+.submit-button {
+  padding:15px;
+  width: 100px;
+
+  border-radius: 10px;
+  border:none;
+
+  margin-top: 25px;
+
+  background-color:rgb(241, 241, 104);
+  font-family: system-ui;
+  font-weight: bold;
+  color:rgb(79, 168, 69);
+
+  transition: 0.5s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 6px;
+  cursor: pointer;
+}
+
+.submit-button:active {
+  transform: translateY(0px);
+  background-color: rgb(165, 165, 82);
+}
+
+.error {
+  color: rgb(241, 241, 104);
+  font-family: system-ui;
+  margin-top: 20px;
 }

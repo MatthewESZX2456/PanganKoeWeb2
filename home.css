@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
   
   background-image: linear-gradient(to right, rgba(39, 126, 61, 0.933), #72eb7e);
 }
@@ -117,11 +117,12 @@ header .a1:hover, .a2:hover, .a3:hover {
 .hero-section-1 .signups .signup-button:hover {
   transform: translateY(-4px);
   box-shadow: 2px 2px 6px;
+  cursor: pointer;
 }
 
 .card-container-1 .inside-container-1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 300px));
+  grid-template-columns: repeat(2, 300px);
   gap: 30px;
   position:relative;
   padding: 2px 4px;
@@ -135,7 +136,7 @@ header .a1:hover, .a2:hover, .a3:hover {
   border: 2px solid white;
   border-radius: 20px;
   overflow: hidden;
-
+  background-image: linear-gradient(to right, #53a24753, #58da6195);
 
   box-shadow: 2px 2px 4px;
   display: flex;
@@ -172,20 +173,19 @@ header .a1:hover, .a2:hover, .a3:hover {
 }
 
 footer {
-  padding: 20px;
+  padding: 30px;
   background-color: rgb(65, 159, 39);
-  margin-top: 500px;
+  margin-top: 200px;
   box-shadow: 2px 2px 8px;
   display: flex;
   flex-direction: row;
-  flex: 1;
-  position: sticky;
 }
 
 footer .text-footer-1 {
   font-family: system-ui;
   font-weight: 700;
   color: white;
+  margin-left: 650px;
 }
 
 footer .text-footer-2 {
@@ -200,4 +200,48 @@ footer .text-footer-3 {
   font-size: 12px;
   color: white;
   margin-top: 4px;
+}
+
+.aboutus-container {
+  border: 2px solid white;
+  border-radius: 10px;
+
+  max-width: 1300px;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  margin-top: 200px;
+
+  justify-content: flex-start;
+  background-color: rgb(65, 159, 39);
+}
+
+.aboutus-header {
+  padding: 32px 50px 8px;
+
+  font-family: system-ui;
+  color: white;
+
+  position: relative;
+}
+
+.aboutus-description {
+  padding: 8px 40px 32px;
+}
+
+.aboutus-desc-1 {
+  font-family: system-ui;
+  color: white;
+}
+
+.aboutus-image {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 900px;
+
+  position:absolute;
+  margin-top: -20px;
+
+  box-shadow: 0 0 8px;
+  border-radius: 10px;
 }

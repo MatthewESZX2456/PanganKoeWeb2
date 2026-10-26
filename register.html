@@ -7,7 +7,7 @@
     <title>PanganKoe</title>
 
     <link rel="stylesheet" href="register.css">
-    <link rel="icon" type="image/png/jpg" href="">
+    <link rel="icon" type="image/png/jpg" href="Green P Vegetable Bowl Logo.png">
   </head>
 
   <body>
@@ -16,19 +16,94 @@
       <h1 class="title2">Koe</h1>
 
       <nav class="navbar1">
-        <a class="a1" href=""><p>Home</p></a>
+        <a class="a1" href="home.html"><p>Home</p></a>
         <a class="a2" href=""><p>Resgistration</p></a>
         <a class="a3" href=""><p>About Us</p></a>
       </nav>
     </header>
 
     <main>
+      <section class="for-image-1">
+        <img class="image-mascot" src="PanganKoe Green Mascot Ambassador.png"
+        height="600"> 
+      </section>
+
+      <section class="form-container">
+        <form class="pangankoe-form" action="" method="POST" id="form">
+          <h1 class="form-title">Buat Akun!</h1>
+          <section class="form-content">
+            <label for="name">
+              Nama Lengkap
+            </label><br>
+            <input class="normal-input" type="text"
+            placeholder="  Rusdi Santoso" id="name" name="name">
+            <small class="error" id="error-name"></small>
+            <br><br>
+
+            <label for="number">
+              Nomor Telepon
+            </label><br>
+            <input class="normal-input" type="number"
+            placeholder="  08xxxxxxxxxx" id="number" name="number">
+            <small class="error" id="error-number"></small>
+            <br><br>
+
+            <label for="email">
+              Email
+            </label><br>
+            <input class="normal-input" type="text" id="email" name="email"
+            placeholder="  santosorusdi78@gmail.com">
+            <small class="error" id="error-email"></small>
+            <br><br>
+
+            <section class="password-group">
+              <section class="for-password">
+                <label for="password">Password</label><br>
+                <input class="password-input" type="password" id="password" name="password">
+                <small class="error" id="error-password"></small>
+              </section>
+
+              <section class="for-confirm-password">
+                <label for="confirm-password">Confirm Password</label><br>
+                <input class="password-input" type="password" id="confirm-password" name="confirm-password">
+                <small class="error" id="error-confirm-password"></small>
+              </section>
+            </section>
+            <br>
+
+            <label for="birthdate">
+              Tanggal Lahir
+            </label><br>
+            <input class="normal-input" type="date"
+            id="birthdate" name="birthdate">
+            <small class="error" id="error-birthdate"></small>
+            <br><br>
+
+            <label for="gender">Gender</label><br>
+            <select class="normal-input" type="dropdown" id="gender-picker">
+              <option name="" value="">Pilih</option>
+              <option name="male" value="male">Laki-laki</option>
+              <option name="female" value="female">Perempuan</option>
+              <option value="non-binary">Tidak ingin memberi tahu</option>
+            </select>
+            <small class="error" id="error-gender"></small>
+
+            <button class="submit-button" type="submit">Daftar!</button>
+          </section>
+        </form>
+
+
+      </section>
 
     </main>
 
     <footer>
-      
+      <p class="text-footer-1">Pangan</p>
+        <p class="text-footer-2">Koe</p>
+        <p class="text-footer-3">All Rights Reserved</p>
     </footer>
+
+    <script src="register.js"></script>
 
   </body>
 
