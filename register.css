@@ -93,7 +93,7 @@ footer .text-footer-3 {
   margin-top: 100px;
   position: absolute;
 
-  left: 850px;
+  left: 800px;
 }
 
 .form-container {
@@ -108,6 +108,7 @@ footer .text-footer-3 {
 
   border-radius: 20px;
   box-shadow: 0 0 10px;
+  border: 2px solid white;
 }
 
 .form-title {
@@ -130,7 +131,7 @@ label {
 
 .normal-input {
   width: 350px;
-  height: 25px;
+  height: 35px;
   margin-top: 5px;
 
   border-radius: 5px;
